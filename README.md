@@ -3,10 +3,10 @@
 Pertanyaan:
 1. Apakah kegunaan JSON pada REST API?
     - JSON adalah format yang dipakai untuk menyimpan dan mentransfer data
-    - JSON sebagai format untuk bertukar data client dan server atau antar aplikasi. Contoh: RESTful API
+    - Kegunaan JSON yaitu sebagai format untuk bertukar data client dan server atau antar aplikasi.
     
 2. Jelaskan bagaimana REST API bekerja?
-    - Dalam RESTful application akan ada 2 sisi yaitu REST Server dan REST Client.
+    - Dalam RESTful application da 2 sisi yaitu REST Server dan REST Client.
     - REST server adalah pihak yang menyediakan data sedangkan REST Client adalah pihak yang melakukan request ke REST Server.
     - Cara kerja REST API adalah REST client akan mengakses data/resource ke REST server dimana masing-masing resource atau data tersebut dibedakan oleh sebuah global ID atau URIs (Universal Resource Identifiers).
 
