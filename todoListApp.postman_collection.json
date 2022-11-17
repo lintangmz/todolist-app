@@ -1,0 +1,254 @@
+{
+	"info": {
+		"_postman_id": "6f28e9f6-0c34-46b5-bbaf-5549aa9ae609",
+		"name": "todoListApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21279156"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"1111\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"1111\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "authorization",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiY29kZSI6MTExMSwiaWF0IjoxNjY4NzEzNjgzLCJleHAiOjE2Njg4MDAwODN9.qtnCQRekrB8-jh80spZQKdqKs3bZEwkFD7mR-CSdUt0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/authorization",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"authorization"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiY29kZSI6MTExMSwiaWF0IjoxNjY4NzEzNjgzLCJleHAiOjE2Njg4MDAwODN9.qtnCQRekrB8-jh80spZQKdqKs3bZEwkFD7mR-CSdUt0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/showUser",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"showUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addTask",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiY29kZSI6MTExMSwiaWF0IjoxNjY4NzEzNjgzLCJleHAiOjE2Njg4MDAwODN9.qtnCQRekrB8-jh80spZQKdqKs3bZEwkFD7mR-CSdUt0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"1\",\r\n    \"task\": \"Makan\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/addTask",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addTask"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "showTasks",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiY29kZSI6MTExMSwiaWF0IjoxNjY4NzEzNjgzLCJleHAiOjE2Njg4MDAwODN9.qtnCQRekrB8-jh80spZQKdqKs3bZEwkFD7mR-CSdUt0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/showTasks",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"showTasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "showByUser",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiY29kZSI6MTExMSwiaWF0IjoxNjY4NzEzNjgzLCJleHAiOjE2Njg4MDAwODN9.qtnCQRekrB8-jh80spZQKdqKs3bZEwkFD7mR-CSdUt0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/showTasks/byUser/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"showTasks",
+						"byUser",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateById",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiY29kZSI6MTExMSwiaWF0IjoxNjY4NzEzNjgzLCJleHAiOjE2Njg4MDAwODN9.qtnCQRekrB8-jh80spZQKdqKs3bZEwkFD7mR-CSdUt0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"task\": \"ApaAja\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/update/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteById",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiY29kZSI6MTExMSwiaWF0IjoxNjY4NzEzNjgzLCJleHAiOjE2Njg4MDAwODN9.qtnCQRekrB8-jh80spZQKdqKs3bZEwkFD7mR-CSdUt0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/deleteById/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"deleteById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
