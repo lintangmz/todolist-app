@@ -25,12 +25,7 @@ const add = async (req, res) => {
 
 const show = async (req, res) => {
     try {
-        let result = await ToDos.findAll({
-            include: [{
-                model: User,
-                as: 'users'
-            }]
-        })
+        let result = await ToDos.findAll()
 
         return res.status(200).send(result)
     } catch (err) {
@@ -52,7 +47,7 @@ const showByUser = async (req, res) => {
             })
         }
 
-        return res.status(200).send(result)
+        return res.status(200).send(userId)
     } catch (err) {
         return res.status(500).send(err)
     }
