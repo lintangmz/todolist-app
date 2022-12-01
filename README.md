@@ -9,7 +9,7 @@ Pertanyaan:
     - Dalam RESTful application ada 2 sisi yaitu REST Server dan REST Client.
     - REST server adalah pihak yang menyediakan data sedangkan REST Client adalah pihak yang melakukan request ke REST Server.
     - RESTful API berperan sebagai jembatan antara database dengan client.
-    - Cara kerja REST API adalah client akan mengirimkan request ke server melalui RESTful API dan client bisa memberikan responsenya juga melalui RESTful API. Jadi, client bisa berkomunikasi dengan sever hingga mengubah data yang ada di database (server) sesuai dengan ketetuan yang diberikan. Akan tetapi, mereka tidak bisa mengubah sesuatu diluar aturan yang berlaku.
+    - Cara kerja REST API adalah client akan mengirimkan request ke server melalui RESTful API dan server bisa memberikan responsenya ke client juga melalui RESTful API. Jadi, client bisa berkomunikasi dengan sever hingga mengubah data yang ada di database (server) sesuai dengan ketetuan yang diberikan. Akan tetapi, mereka tidak bisa mengubah sesuatu diluar aturan yang berlaku.
 
 3. Deskripsi fitur:
     - Dalam mock test kali ini, saya membuat To Do List App, dengan menerapkan 2 model yang memiliki relasi one to many, yang mana 1 user bisa memiliki banyak To Do List.
